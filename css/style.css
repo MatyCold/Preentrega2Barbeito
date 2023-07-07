@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: cadetblue;
+}
+
+section article h3 {
+    color: tomato;
+}
+
+
+.color-rojo {
+    color: brown;
+}
+
+.fondo-rosa {
+    background-color: pink;
+}
+
+#noticia {
+    background-color: cadetblue;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+iframe {
+    margin-top: 50px;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.logo-petshop {
+
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.Navegacion {
+    border-style: groove;
+    border-color: red;
+    border-radius: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+
+}
+
+.ListaNavegacion {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fondo {
+    background-color: palevioletred;
+}
+
+.cabeza {
+    background-color: white;
+}
+
+.secciones {
+    display: flex;
+    justify-content: center;
+    border-style: groove;
+    padding: 20px;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto
+}
+
+.imagenes-carrusel {
+    display: flex;
+    justify-content: space-around
+}
+
+.imagenes-nosotros {
+    display: flex;
+    height: 300px;
+    max-width: 100%;
+    justify-content: space-around
+}
+
+.imagenes-nosotros p {
+    width: 30%;
+    margin-top: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center
+}
+
+.imagenes-reseñas {
+    display: flex;
+    height: 300px;
+    max-width: 100%;
+    justify-content: space-around
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.contenedor img {
+    max-width: 100%;
+}
+
+.contenedor p {
+    font-size: 16px;
+}
+
+.contenedor-2 {
+    text-align: center;
+    
+}
+
+.contenedor-2 img {
+    max-width: 100%;
+    height: 300px;
+}
