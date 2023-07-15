@@ -1,36 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #ffdcf8;
 
 }
 
-
-
-h1 {
-    color: red;
-}
-
-h2 {
-    color: cadetblue;
-}
-
-section article h3 {
-    color: tomato;
-}
-
-
-.color-rojo {
-    color: brown;
-}
-
-.fondo-rosa {
-    background-color: pink;
-}
-
-#noticia {
-    background-color: cadetblue;
-}
-
+/*SECCION CONTACTOS*/
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -49,7 +24,9 @@ iframe {
 textarea {
     resize: none;
 }
+/*SECCION CONTACTOS*/
 
+/*HEAD*/
 .logo-petshop {
 
     height: 300px;
@@ -70,14 +47,8 @@ textarea {
     display: flex;
     justify-content: flex-end;
 }
+/*HEAD*/
 
-.fondo {
-    background-color: palevioletred;
-}
-
-.cabeza {
-    background-color: white;
-}
 
 .secciones {
     display: flex;
@@ -86,12 +57,17 @@ textarea {
     padding: 20px;
     width: 80%;
     height: 50%;
-    margin: 0 auto
+    margin: 0 auto;
+    font-weight: bold;
+    
 }
 
+/*IMAGENES INDEX*/
 .imagenes-carrusel {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    font-style: italic;
+
 }
 
 .imagenes-nosotros {
@@ -115,6 +91,7 @@ textarea {
     max-width: 100%;
     justify-content: space-around
 }
+/*IMAGENES INDEX*/
 
 .contenedor {
     text-align: center;
@@ -130,7 +107,7 @@ textarea {
 
 .contenedor-2 {
     text-align: center;
-    
+
 }
 
 .contenedor-2 img {
