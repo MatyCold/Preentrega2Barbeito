@@ -1,0 +1,208 @@
+$background-color: #ffdcf8;
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+}
+
+/*SECCION CONTACTOS*/
+// Resto de reglas para la sección "CONTACTOS"
+
+/*HEAD*/
+$logo-height: 300px;
+
+.logo-petshop {
+    height: $logo-height;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion {
+    border-style: groove;
+    border-color: red;
+    border-radius: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+.listanavegacion {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*HEAD*/
+
+.secciones {
+    display: flex;
+    justify-content: center;
+    border-style: groove;
+    padding: 20px;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/*IMAGENES INDEX*/
+.imagenes-carrusel {
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+}
+
+.imagenes-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    width: 30%;
+    margin-top: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+
+.imagenes-reseñas {
+    display: flex;
+    height: 300px;
+    max-width: 100%;
+    justify-content: space-around;
+}
+
+/*IMAGENES INDEX*/
+
+.contenedor {
+    text-align: -webkit-center;
+
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.contenedor-2 {
+    text-align: -webkit-center;
+
+    img {
+        max-width: 100%;
+        height: 300px;
+    }
+}
+
+/*RESPOSIVE CONTACTO MOBILE*/
+@media screen and (min-width: 375px) and (max-width: 480px) {
+    header {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    form {
+        font-size: 14px;
+    }
+
+    .mensaje {
+        font-size: 12px;
+    }
+
+    .navegacion {
+        font-size: 12px;
+    }
+
+    .listanavegacion {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*RESPOSIVE CONTACTO DESKTOP*/
+@media screen and (min-width: 485px) and (max-width: 1200px) {
+    header {
+        font-size: 24px;
+    }
+
+    form {
+        font-size: 16px;
+    }
+
+    .mensaje {
+        font-size: 14px;
+    }
+
+    .Navegacion {
+        font-size: 14px;
+    }
+}
+
+/*RESPONSIVE INDEX MOBILE*/
+@media screen and (min-width: 375px) and (max-width: 480px) {
+    header {
+        font-size: 18px;
+    }
+
+    .listanavegacion {
+        flex-direction: column;
+    }
+
+    .navegacion {
+        font-size: 14px;
+    }
+
+    .secciones {
+        font-size: 18px;
+    }
+
+    .imagenes-carrusel,
+    .imagenes-nosotros,
+    .imagenes-reseñas {
+        flex-direction: column;
+    }
+
+    .contenedor-2,
+    .contenedor {
+        font-size: 16px;
+    }
+}
+
+/*RESPONSIVE INDEX DESKTOP*/
+@media screen and (min-width: 485px) and (max-width: 1200px) {
+    header {
+        font-size: 24px;
+    }
+
+    .listanavegacion {
+        gap: 40px;
+    }
+
+    .navegacion {
+        font-size: 16px;
+    }
+
+    .secciones {
+        font-size: 24px;
+    }
+
+    .imagenes-carrusel,
+    .imagenes-nosotros,
+    .imagenes-reseñas {
+        gap: 40px;
+    }
+
+    .contenedor-2,
+    .contenedor {
+        font-size: 20px;
+    }
+}
+img {
+    transition: transform 0.3s;
+}
+a:hover img {
+    transform: scale(1.2);
+}
