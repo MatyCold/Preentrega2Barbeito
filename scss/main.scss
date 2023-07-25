@@ -7,7 +7,6 @@ $background-color: #ffdcf8;
 }
 
 /*SECCION CONTACTOS*/
-// Resto de reglas para la sección "CONTACTOS"
 
 /*HEAD*/
 $logo-height: 300px;
@@ -34,6 +33,19 @@ $logo-height: 300px;
 
 /*HEAD*/
 
+footer {
+    background-color: #333;
+    color: #0c0c0c;
+    text-align: center;
+    padding: 20px;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
 .secciones {
     display: flex;
     justify-content: center;
@@ -56,7 +68,7 @@ $logo-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
 
 p {
     width: 30%;
@@ -95,6 +107,14 @@ p {
         max-width: 100%;
         height: 300px;
     }
+}
+
+img {
+    transition: transform 0.3s;
+}
+
+a:hover img {
+    transform: scale(1.2);
 }
 
 /*RESPOSIVE CONTACTO MOBILE*/
@@ -159,15 +179,32 @@ p {
         font-size: 18px;
     }
 
-    .imagenes-carrusel,
-    .imagenes-nosotros,
     .imagenes-reseñas {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
     }
 
-    .contenedor-2,
-    .contenedor {
-        font-size: 16px;
+    .imagenes-nosotros img {
+        width: 40%;
+    }
+
+    .imagenes-nosotros p {
+        font-size: 10px;
+    }
+
+    .imagenes-carrusel img {
+        width: 70%;
+        height: auto;
+    }
+    .contenedor p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -189,8 +226,7 @@ p {
         font-size: 24px;
     }
 
-    .imagenes-carrusel,
-    .imagenes-nosotros,
+
     .imagenes-reseñas {
         gap: 40px;
     }
@@ -200,9 +236,4 @@ p {
         font-size: 20px;
     }
 }
-img {
-    transition: transform 0.3s;
-}
-a:hover img {
-    transform: scale(1.2);
-}
+

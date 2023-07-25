@@ -27,6 +27,20 @@
 }
 
 /*HEAD*/
+footer {
+  background-color: #333;
+  color: #0c0c0c;
+  text-align: center;
+  padding: 20px;
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
 .secciones {
   display: flex;
   justify-content: center;
@@ -85,6 +99,14 @@ p {
   height: 300px;
 }
 
+img {
+  transition: transform 0.3s;
+}
+
+a:hover img {
+  transform: scale(1.2);
+}
+
 /*RESPOSIVE CONTACTO MOBILE*/
 @media screen and (min-width: 375px) and (max-width: 480px) {
   header {
@@ -134,14 +156,28 @@ p {
   .secciones {
     font-size: 18px;
   }
-  .imagenes-carrusel,
-  .imagenes-nosotros,
   .imagenes-reseñas {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
   }
-  .contenedor-2,
-  .contenedor {
-    font-size: 16px;
+  .imagenes-nosotros img {
+    width: 40%;
+  }
+  .imagenes-nosotros p {
+    font-size: 10px;
+  }
+  .imagenes-carrusel img {
+    width: 70%;
+    height: auto;
+  }
+  .contenedor p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
   }
 }
 /*RESPONSIVE INDEX DESKTOP*/
@@ -158,8 +194,6 @@ p {
   .secciones {
     font-size: 24px;
   }
-  .imagenes-carrusel,
-  .imagenes-nosotros,
   .imagenes-reseñas {
     gap: 40px;
   }
@@ -167,13 +201,6 @@ p {
   .contenedor {
     font-size: 20px;
   }
-}
-img {
-  transition: transform 0.3s;
-}
-
-a:hover img {
-  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=styles.css.map */
